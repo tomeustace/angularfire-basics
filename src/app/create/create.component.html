@@ -1,0 +1,35 @@
+<div class="flex justify-center w-full m-8">
+
+  <form class="w-full max-w-lg">
+    <div class="flex mb-6 -mx-3 flex-nowrap justify-evenly">
+
+      <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
+        <label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="grid-first-name">
+          Collection Name
+        </label>
+        <input
+          class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-blue-500 rounded appearance-none focus:outline-none focus:bg-white"
+          id="grid-first-name"
+          type="text" [formControl]="collectionCtrl" placeholder="Collection Name">
+      </div>
+
+      <div class="w-full px-3 md:w-1/2">
+        <label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="grid-last-name">
+          Document Name
+        </label>
+        <input
+          class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 border border-blue-500 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
+          id="grid-last-name" type="text" [formControl]="documentCtrl" placeholder="Document Name">
+      </div>
+
+      <div class="mt-8">
+        <button
+          class="px-2 py-1 text-sm text-white bg-teal-500 border-4 border-teal-500 rounded hover:bg-teal-700 hover:border-teal-700"
+          type="button" (click)="createCollection()">
+          Create
+        </button>
+      </div>
+    </div>
+  </form>
+
+</div>

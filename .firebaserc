@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angularfire-basics": {
+      "hosting": {
+        "angularfire-basics": [
+          "angularfire-basics"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angularfire-basics"
+  }
+}
